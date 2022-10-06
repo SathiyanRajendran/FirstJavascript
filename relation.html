@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+     #res
+     {
+      color:brown;
+      background-color: azure;
+      font-size: 30px;
+     }
+
+      
+      </style>
+    <script>
+      function relation()
+      {
+        if(document.getElementById("t1").value==document.getElementById("t2").value)
+        {
+          document.getElementById("res").innerHTML="Both are equal"
+        }
+        else if(document.getElementById("t1").value > document.getElementById("t2").value)
+        {
+          document.getElementById("res").innerHTML="First number is greater than second number"
+        }
+        else
+        {
+          document.getElementById("res").innerHTML="Second number is greater than first number"
+        }
+      }
+      </script>
+    </head>
+    <body>
+       <h1>Enter the first number<input type="text" id="t1"></h1>
+       <h1>Enter the second number<input type="text" id="t2"></h1>
+       <button type="button" onclick="relation()"> Relate</button>
+       <div id="res"></div>
+      </body>
+  </html>

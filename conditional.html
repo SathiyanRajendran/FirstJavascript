@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #res{
+      color: blue;
+      background-color: aliceblue;
+      font-size: 30px;
+    }
+    </style>
+ <script>
+    function age()
+    {
+      if(document.getElementById("t1").value>=18)
+      {
+          //window.alert( 'Eligible for voting');
+          //document.writeln('Eligible for voting')
+          document.getElementById("res").innerHTML="Eligible for voting";
+
+      }
+      else
+      {
+        //window.alert("Not eligible for voting")
+        document.getElementById("res").innerHTML="Not Eligible for voting";
+
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Enter your age:<input type="text" id="t1"><br></h1>
+  <button type="button" onclick="age()">Verify</button><br>
+  <div id="res"></div>
+</body>
+</html>

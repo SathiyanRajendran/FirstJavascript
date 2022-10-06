@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script>
+      function pergrade()
+      {
+        document.getElementById("perc").value=(document.getElementById("om").value/document.getElementById("mm").value)*100;
+        var obtainedPercentage=document.getElementById("perc").value
+        var obtainedGrade;
+        switch(Math.floor(obtainedPercentage/10))
+        {
+          case 9:
+            case 8:
+              obtainedGrade="outstanding";
+              break;
+              case 7:{
+                obtainedGrade="distinction";
+                break;
+              }
+              case 6:
+                obtainedGrade="Good";
+                break;
+                case 5:
+                  obtainedGrade="Average";
+                  break;
+                  case 4:arguments
+                  obtainedGrade="Pass";
+                  break;
+                  default:arguments
+                  obtainedGrade="Fail";
+                  break;
+        }
+        document.getElementById("grade").value=obtainedGrade;
+      }
+      </script>
+  </head>
+  <body>
+    <h1>Percentage and Grade Calculator</h1>
+    <h3>Maximum Marks<input type="text" id="mm"></h3>
+    <h3>Obtained Marks<input type="text" id="om"></h3>
+    <button type="button" onclick="pergrade()"> Submit </button>
+    <h3>Percentage<input type="text" id="perc"></h3>
+    <h3>Grade<input type="text" id="grade"></h3>
+    </body>
+</html>
