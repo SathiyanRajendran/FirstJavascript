@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <h1>Strings-String Object,Methods</h1>
+    <script>
+      var s="Welcome to JavaScript 'included'"
+      var s1='    string with single quotes "included"     '
+      document.writeln("Double quotes:"+s+"<br>");
+      document.writeln("Single quotes:"+s1+"<br>")
+      document.writeln("String:"+typeof(s)+"<br>")
+
+
+      var s2=new String("Hello Sathiyan");
+      document.writeln("Object:"+typeof(s2)+"<br>")
+      document.writeln("<h1>String Methods</h1>")
+      document.writeln("s2:"+s2+"<br>")
+      document.writeln("length:"+s2.length+"<br>")
+      document.writeln("IndexOf:"+s2.indexOf("a")+"<br>")
+      document.writeln("IndexOf:"+s2.indexOf("z")+"<br>") //first occurence
+      document.writeln("LastIndexOf:"+s2.lastIndexOf("a")+"<br>")//last occurence
+      document.writeln("IndexOf:"+s2.indexOf("a",8)+"<br>")
+      document.writeln("Search:"+s2.search("a")+"<br>")
+      document.writeln("Slice:"+s2.slice(0,5)+"<br>")
+      document.writeln("Slice:"+s2.slice(0)+"<br>")//stop index is optional
+      document.writeln("Slice:"+s2.slice(-5,-1)+"<br>")//negative index in slicing
+
+      document.writeln("substring:"+s2.substring(6,12)+"<br>")
+      document.writeln("substr:"+s2.substr(0,7)+"<br>")
+      document.writeln("Replace():"+s2.replace("Sathiyan","Rajendran")+"<br>")
+      document.writeln("Uppercase():"+s2.toUpperCase()+"<br>")
+      document.writeln("Lowercase():"+s2.toLowerCase()+"<br>")
+      document.writeln("Concat():"+s2.concat(" "+s)+"<br>")
+      document.writeln("Trim():"+s1.trim()+"<br>")
+      document.writeln("charAt():"+s2.charAt(11)+"<br>")
+      document.writeln("charCodeAt():"+s2.charCodeAt(4)+"<br>")
+
+      for(var i=0;i<s2.length;i++)
+      {
+        document.writeln(s2[i]+"<br>")
+      }
+
+
+      </script>
+  </body>
+</html>
