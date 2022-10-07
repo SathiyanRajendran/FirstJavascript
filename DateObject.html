@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <h1>Date Object creation</h1>
+    <script>
+      document.writeln("<h1>Current Date</h1>")
+      document.writeln("<h2>")
+
+      var d1=new Date()
+      document.writeln("Current date():"+d1+"<br>")
+      document.writeln("<h1>Static Date</h1>")
+
+      var d2=new Date(2022,0,10,21,10,10,100)
+      document.writeln("Static Date():"+d2+"<br>")
+
+      document.writeln("<h1>Changed Parameter Date</h1>")
+      var d3=new Date(2022,2,12)
+      document.writeln("Parameter Date():"+d3+"<br>")
+      var d4=new Date(2022,2)
+      document.writeln("Date():"+d4+"<br>")
+      var d5=new Date(2022) //JS perception it is milliseconds
+      document.writeln("Date():"+d5+"<br>")
+      var d6=new Date(-2022)
+      document.writeln("Date():"+d6+"<br>")
+      var d7=new Date(99,09)
+      document.writeln("Date():"+d7+"<br>")
+      var d8=new Date("2022 October 07,08:53:10") //Datestring
+      document.writeln("Date():"+d8+"<br>")
+
+
+
+
+
+      </script>
+    </body>
+  </html>
