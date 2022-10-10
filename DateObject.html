@@ -23,8 +23,51 @@
       document.writeln("Date():"+d6+"<br>")
       var d7=new Date(99,09)
       document.writeln("Date():"+d7+"<br>")
-      var d8=new Date("2022 October 07,08:53:10") //Datestring
+      var d8=new Date("2022 October 07,08:53:10:100") //Datestring
       document.writeln("Date():"+d8+"<br>")
+
+
+      document.writeln("<h1>Get Methods in Date object</h1>")
+        document.writeln("Year:"+d1.getFullYear()+"<br>")
+        document.writeln("Month:"+d1.getMonth()+"<br>")
+        document.writeln("Date:"+d1.getDate()+"<br>")
+        document.writeln("Day:"+d1.getDay()+"<br>")
+        document.writeln("Hours:"+d1.getHours()+"<br>")
+        document.writeln("Minutes:"+d1.getMinutes()+"<br>")
+        document.writeln("Seconds:"+d1.getSeconds()+"<br>")
+        document.writeln("Milliseconds:"+d1.getMilliseconds()+"<br>")
+        document.writeln("Time:"+d1.getTime()+"<br>")
+
+        document.writeln("<h1>Set Methods in Date object</h1>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+        document.writeln("Year:"+d1.setFullYear(2022,10)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+        document.writeln("Month:"+d1.setMonth(9)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+        document.writeln("Date:"+d1.setDate(14)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+        document.writeln("Hours:"+d1.setHours(14)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+        document.writeln("Minutes:"+d1.setMinutes(29)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+        document.writeln("Seconds:"+d1.setSeconds(34)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+        document.writeln("Milliseconds:"+d1.setMilliseconds(234)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+        document.writeln("Time:"+d1.setTime(1987)+"<br>")
+        document.writeln("NewDate():"+d1+"<br>")
+
+
+
+
+
 
 
 
